@@ -1,0 +1,27 @@
+<div class="container mt-2">
+    <legend>Create Item</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txtName" class="form-label">Name</label>
+            <input type="text" name="name" [(ngModel)]="superHeroes.name" class="form-control" id="txtName" />
+        </div>
+        <div class="mb-3">
+            <label for="txtFranchise" class="form-label">Franchise</label>
+            <input type="text" name="txtFranchise" [(ngModel)]="superHeroes.franchise" class="form-control"
+                id="txtFranchise" />
+        </div>
+        <div class="mb-3">
+            <label for="txtImageUrl" class="form-label">ImageUrl</label>
+            <input type="text" name="txtImageUrl" [(ngModel)]="superHeroes.imageUrl" class="form-control"
+                id="txtImageUrl" />
+        </div>
+        <div class="mb-3">
+            <label for="txtPowers" class="form-label">Powers</label>
+            <textarea class="form-control" name="powers" id="txtPowers" [(ngModel)]="superHeroes.powers"
+                rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="create()">
+            Create
+        </button>
+    </form>
+</div>
